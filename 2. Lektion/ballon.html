@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Ballon</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+</head>
+
+<body>
+    <style>
+    p {
+        font-size: 25px;
+    }
+    </style>
+
+    <p id="ballon">🎈</p>
+
+    <script>
+    document.addEventListener("keydown", size);
+    let pikkemand = 25;
+
+    function size(event){
+        let element = document.getElementById("ballon");
+        let current_size = pikkemand;
+        if (event.key == "ArrowUp") {
+            element.style.fontSize = (current_size *= 1.1) + "px";
+        } else if (event.key == "ArrowDown") {
+            element.style.fontSize = (current_size *= 0.9) + "px";
+        }
+        pikkemand = current_size;
+    }
+
+    </script>
+</body>
+
+</html>

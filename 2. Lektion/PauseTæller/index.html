@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="dk">
+    <head>
+        <meta charset="utf-8"/>
+        <title>IWP Pause tæller</title>
+           <link rel="stylesheet" href="styles/pause.css">
+    </head>
+<body>
+
+<header>
+<h1>IWP Pausetæller</h1>
+</header>
+<section id="taellerSection">
+<div id="taellerInputFelt"> 
+ <!-- <form id="taellerForm">  --> 
+  <datalist id="pauser">
+    <option value=60>
+    <option value=180>
+    <option value=300>
+    <option value=600>
+    <option value=900>
+  </datalist> 
+
+  <span><label for="pauseInput">Indtast pauselænge i sekunder :</label> 
+   <input type="number" min="1" max="1200" required name="Pause" id="pauseInput" list="pauser">
+   <button type="submit" id="start">Start</button>
+</span>
+<div id="pauseError" class="errorMessage"> Angiv et tal mellem 1 og 1200 sekunder! </div>
+ <!--  </form> -->
+</div> <!-- Taeller Input felt-->
+
+<div id="taellerFelt">
+ <div id="taeller">0</div>
+</div>
+</section>
+
+<script>
+
+ let taellerForm=document.getElementById("taellerForm");
+ let pauseInputElem=document.getElementById("pauseInput");
+ let startElem=document.getElementById("start");
+ let errorElem=document.getElementById("pauseError");
+ let taellerElem =document.getElementById("taeller")
+
+ let taellerStatus={
+   varighed:0,
+   ticks: 0,
+   started: false,
+   clock:0,
+ }
+taellerStatus.tidTilbage=function() {
+   return this.varighed-this.ticks;
+}
+ taellerStatus.tick= function(){
+    this.ticks++;
+    //console.log("tick", this.ticks);
+    if(this.tidTilbage()<=0) {
+      clearInterval(this.clock);
+      this.started=false;
+    }
+    if(Math.floor(this.tidTilbage()*100/this.varighed)<=20)
+      taellerElem.style.background="red";
+      else 
+          if(Math.floor(this.tidTilbage()*100/this.varighed)<=50)
+            taellerElem.style.background="yellow";
+
+    taeller.innerHTML=String(this.varighed-this.ticks);
+   }
+
+   taellerStatus.reset=function(){
+     this.varighed=0;
+     this.ticks=0;
+     this.started=0;
+   }
+function tick(){
+  taellerStatus.tick();
+}
+
+ pauseInputElem.addEventListener("invalid",invalid);
+startElem.addEventListener("click",submit);
+ //taellerForm.addEventListener("submit",resetCounter);
+
+ function submit(event){
+  if(pauseInputElem.checkValidity())
+     resetCounter(event);
+ }
+
+
+
+ function invalid(event){
+   console.log(this, event);
+   errorElem.style.display="block";
+ }
+
+ function resetCounter(event){
+   if(taellerStatus.started) {
+    clearInterval(taellerStatus.clock);
+   }
+   
+   errorElem.style.display="none";
+   taellerElem.style.background="whitesmoke";
+   taellerStatus.reset();
+   taellerStatus.started=true;
+   taellerStatus.varighed=pauseInputElem.value;
+   taeller.innerHTML=String(taellerStatus.varighed);
+   taellerStatus.clock=setInterval(tick,1000);
+   console.log(event);
+   event.preventDefault();
+ }
+
+</script>
