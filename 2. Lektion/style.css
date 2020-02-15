@@ -1,0 +1,63 @@
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+.menupunkt a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.rightalign {
+    float: right;
+}
+
+.login {
+    float: right;
+    padding-right: 2%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+    column-span: 200;
+}
+
+form {
+    padding-top: 2%;
+}
+
+.udgifter {
+    padding-top: 1%;
+    padding-left: 5px;
+}
+
+.oversigt {
+    padding-top: 3%;
+    padding-left: 5px;
+}
+
+.footer {
+    padding-top: 5%;
+}
+
+.header {
+    padding-top: 5px;
+}

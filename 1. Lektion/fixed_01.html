@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="description" content="Hygge skole opgave">
+    <meta name="author" content="Morten Jørgensen">
+
+
+    <title>Weshare men bedre!</title>
+
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="body">
+
+      <header class="header" style="background-color: #ffffff">
+
+        <nav>
+          <ul class="menu">
+            <li class="menupunkt"><a href="#">Hjem</a></li>
+            <li class="menupunkt"><a href="#">Omkring</a></li>
+            <li class="menupunkt"><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <h1 class="h3 text-muted">WeShare men bedre!</h1>
+
+      </header>
+
+        <div class="login">
+        
+            <h2>Log ind</h2>
+        
+                <label for="uname"><b>Brugernavn:</b></label>
+                <br>
+                    <input type="text" placeholder="Indsæt Brugernavn" name="uname" required>
+                <br>
+                <label for="psw"><b>Kodeord:</b></label>
+                <br>
+                    <input type="password" placeholder="Indsæt Kodeord" name="psw" required>
+                <br>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Husk bruger
+                </label>
+                <br>
+                <button type="submit">Log ind</button>
+        
+        
+        </div>
+
+        <div class="udgifter">
+            <h2>Tilføj ny udgift</h2>
+            
+            <table>
+                <tr>
+                    <td>Medlem 1:</td>
+                    <td>Medlem 2:</td>
+                    <td>Medlem 3:</td>
+                    <td>Medlem 4:</td>
+                    <td>Medlem 5:</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="medlem1" name="tilstand">
+                            <option value="del">Del</option>
+                            <option value="giver">Giver</option>
+                            <option value="ik_med">Ik med</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="medlem1" name="tilstand">
+                            <option value="del">Del</option>
+                            <option value="giver">Giver</option>
+                            <option value="ik_med">Ik med</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="medlem1" name="tilstand">
+                            <option value="del">Del</option>
+                            <option value="giver">Giver</option>
+                            <option value="ik_med">Ik med</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="medlem1" name="tilstand">
+                            <option value="del">Del</option>
+                            <option value="giver">Giver</option>
+                            <option value="ik_med">Ik med</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="medlem1" name="tilstand">
+                            <option value="del">Del</option>
+                            <option value="giver">Giver</option>
+                            <option value="ik_med">Ik med</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            
+            <form action="" id="udgift_add">
+                Titel: <input type="text" name="title">
+                Tema: <input type="text" name="tema">
+                Dato: <input type="text" name="dato">
+                Mængde: <input type="text" name="amount">
+                Valuta: <input type="text" name="valuta">
+                <input type="submit">
+            </form>
+
+        </div>
+
+        <div class="oversigt">
+
+            <h2>Oversigt over udgifter</h2>
+            <p>Her kan udgifts historikken for gruppen blive set</p>
+            <table>
+                <tr>
+                    <td>Gav:</td>
+                    <td>Titel:</td>
+                    <td>Tema:</td>
+                    <td>Dato:</td>
+                    <td>Mængde:</td>
+                    <td>Valuta:</td>
+                </tr>
+                <tr>
+                    <td>Cool</td>
+                    <td>Pizza</td>
+                    <td>Mad</td>
+                    <td>12/01-2020</td>
+                    <td>200</td>
+                    <td>DK</td>
+                </tr>
+            </table>
+
+          </div>
+
+
+      </div>
+
+      <footer class="footer">
+        <p class="rightalign">
+          Sidst opdateret: Lørdag, Febuary 15, 2020
+        </p>
+        <p>&copy; 2020 Morten Jørgensen</p>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
