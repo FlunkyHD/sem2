@@ -5,6 +5,10 @@
     overflow: hidden;
     background-color: #333;
 }
+body, header {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(255,244,220,0.46823940757943805) 100%);
+}
 
 li {
     float: left;
@@ -50,8 +54,11 @@ form {
 }
 
 .oversigt {
-    padding-top: 3%;
-    padding-left: 5px;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    margin-top: -75px;
+    margin-left: -100px;
 }
 
 .footer {
@@ -60,4 +67,8 @@ form {
 
 .header {
     padding-top: 5px;
+}
+
+.input_section{
+    padding-top: 15px;
 }
