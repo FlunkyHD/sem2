@@ -1,0 +1,1 @@
+Brug et class til at lave nye rækker i tabellen.
