@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+    <p id="epic"> </p>
+    <button type="button" id="knappe">Klik på mig hvis du er sej</button>
+  <script>
+      let knap = document.getElementById("knappe");
+      let para = document.getElementById("epic");
+      para.innerHTML = "Hej";
+
+      function waitForClick() {
+            return new Promise((resolve, reject) => {
+                knap.addEventListener("click", event => {
+                    resolve();
+                });
+            });
+        }
+      async function control (){
+        await waitForClick().then(() => para.innerHTML = "IWP");
+        await waitForClick().then(() => para.innerHTML = "Kører!");
+      }
+
+      control();
+
+  </script>
+</body>
+</html>

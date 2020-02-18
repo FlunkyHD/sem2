@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="description" content="Hygge skole opgave">
+    <meta name="author" content="Morten Jørgensen">
+
+
+    <title>&#129312;</title>
+    <link rel="shortcut icon" type="image/png" href="WeirdChamp.png" />
+
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="body">
+
+      <header class="header" style="background-color: #ffffff">
+
+        <h1 class="h3 text-muted">WeShare men bedre! &#129312;</h1>
+
+        <nav>
+          <ul class="menu">
+            <li class="menupunkt"><a href="#">Hjem</a></li>
+            <li class="menupunkt"><a href="#">Omkring</a></li>
+            <li class="menupunkt"><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+
+      </header>
+
+        <div class="login">
+        
+            <h2>Log ind</h2>
+        
+                <label for="uname"><b>Brugernavn:</b></label>
+                <br>
+                    <input type="text" placeholder="Indsæt Brugernavn" name="uname" required>
+                <br>
+                <label for="psw"><b>Kodeord:</b></label>
+                <br>
+                    <input type="password" placeholder="Indsæt Kodeord" name="psw" required>
+                <br>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Husk bruger
+                </label>
+                <br>
+                <button type="submit">Log ind</button>
+        
+        
+        </div>
+
+        <div class="udgifter">
+            <h2>Tilføj ny udgift</h2>
+            
+            <table>
+                <tr>
+                    <td>Medlem 1:</td>
+                    <td>Medlem 2:</td>
+                    <td>Medlem 3:</td>
+                    <td>Medlem 4:</td>
+                    <td>Medlem 5:</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="medlem1" name="tilstand">
+                            <option value="del">Del</option>
+                            <option value="giver">Giver</option>
+                            <option value="ik_med">Ik med</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="medlem1" name="tilstand">
+                            <option value="del">Del</option>
+                            <option value="giver">Giver</option>
+                            <option value="ik_med">Ik med</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="medlem1" name="tilstand">
+                            <option value="del">Del</option>
+                            <option value="giver">Giver</option>
+                            <option value="ik_med">Ik med</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="medlem1" name="tilstand">
+                            <option value="del">Del</option>
+                            <option value="giver">Giver</option>
+                            <option value="ik_med">Ik med</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="medlem1" name="tilstand">
+                            <option value="del">Del</option>
+                            <option value="giver">Giver</option>
+                            <option value="ik_med">Ik med</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="input_section">
+                Titel: <br><input type="text" name="title" id="title_value">
+                <br>
+                Tema: <br><input type="text" name="tema" id="tema_value">
+                <br>
+                Dato: <br><input type="text" name="dato" id="dato_value">
+                <br>
+                Mængde: <br><input type="text" name="amount" id="amount_value">
+                <br>
+                Valuta: <br><input type="text" name="valuta" id="valuta_value">
+                <br>
+                <input type="submit" id="input_epic">
+        </div>
+
+        <div class="oversigt">
+
+            <h2>Oversigt over udgifter</h2>
+            <p>Her kan udgifts historikken for gruppen blive set</p>
+            <table id="liste_udgifter">
+                <tr>
+                    <td>Gav:</td>
+                    <td>Titel:</td>
+                    <td>Tema:</td>
+                    <td>Dato:</td>
+                    <td>Mængde:</td>
+                    <td>Valuta:</td>
+                </tr>
+                <tr>
+                    <td>Cool</td>
+                    <td>Pizza</td>
+                    <td>Mad</td>
+                    <td>12/01-2020</td>
+                    <td>200</td>
+                    <td>DK</td>
+                </tr>
+            </table>
+
+          </div>
+
+
+      </div>
+
+      <footer class="footer">
+        <p class="rightalign">
+          Sidst opdateret: Lørdag, Febuary 15, 2020
+        </p>
+        <p>&copy; 2020 Morten Jørgensen</p>
+      </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
