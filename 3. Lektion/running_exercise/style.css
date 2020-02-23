@@ -3,15 +3,16 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #553D67;
 }
+
 body, header {
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(255,244,220,0.46823940757943805) 100%);
+    background: rgb(36, 37, 130);
 }
 
 li {
     float: left;
+    color: azure;
 }
 
 .menupunkt a {
@@ -22,9 +23,8 @@ li {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #111;
+    background-color: #F64C72;
 }
 
 .rightalign {
@@ -34,14 +34,18 @@ li a:hover {
 .login {
     float: right;
     padding-right: 2%;
+    color: azure;
 }
 
 table, th, td {
   border: 1px solid black;
+  color: azure;
+  border-color: azure;
 }
 
 th, td {
     column-span: 200;
+    color: azure;
 }
 
 form {
@@ -51,6 +55,7 @@ form {
 .udgifter {
     padding-top: 1%;
     padding-left: 5px;
+    color: azure;
 }
 
 .random_fact {
@@ -59,6 +64,7 @@ form {
     left: 45%;
     margin-top: -75px;
     margin-left: -100px;
+    color: azure;
 }
 
 .oversigt {
@@ -67,16 +73,24 @@ form {
     left: 45%;
     margin-top: -75px;
     margin-left: -100px;
+    color: azure;
 }
 
 .footer {
     padding-top: 5%;
+    color: azure;
 }
 
 .header {
     padding-top: 5px;
+    background: rgb(36, 37, 130);
 }
 
 .input_section{
     padding-top: 15px;
+    color: azure;
+}
+
+.overskrift {
+    color: #F64C72;
 }
