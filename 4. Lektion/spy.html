@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+<body>
+    <p id="epic">Prøv at hover over mig :)</p>
+    <script> 
+    let para = document.getElementById("epic");
+
+        para.addEventListener("mouseover", spy);
+
+        function spy() {
+            para.innerHTML += "LOL";
+        }
+
+        $('#epic').click(function () {
+                $.post('/test');
+            });
+
+    </script>
+</body>
+</html>
