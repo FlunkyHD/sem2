@@ -1,0 +1,5 @@
+Q: What is the differnce between a host and an end system? List several different types of end systems. Is a Web server an end system?
+A:
+Host: Sender og modtager pakker baseret på IP, så Hosts og end systems er det samme.
+End systems: Client (Computer, Laptop, smartphone, etc...), Web server, mail server, etc...
+Web server er et End system.

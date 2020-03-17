@@ -1,0 +1,9 @@
+What are the five layers in the Internet protocol stack? What are the principal
+responsibilities of each of these layers?
+
+(Se 1.5.1 for detalgeret beskrivelse af hvert lag)
+5. Application (Beskeder, HTTP osv., Står for overførslen af beskeder mellem hosts)
+4. Transport (Står for at transportere applications-beskeder mellem hosts)
+3. Network (Står for at flytte netværks-pakker mellem hosts)
+2. Data Link (Står for at flytte pakker mellem routere/hosts)
+1. Physical (Fysisk transport af bits)

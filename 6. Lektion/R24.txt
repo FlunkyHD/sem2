@@ -1,0 +1,29 @@
+What do encapsulation and de-encapsulation mean? Why are they needed in
+a layered protocol stack?
+
+At "encapsulate" er det at gå et lag ned i 5 lags modellen, hvor man efter hvert lag kommer en header på dataen der passer til det lag.
+Der er også den mulighed at en pakke kan blive brugdt op i mindre pakker, hvis den er for stor, alle disse mindre pakker får hver
+headers, sådan at de også kan finde frem til ende distinationen.
+
+"De-encapsulate" er så den modsatte process for den som modtager pakkerne, hvor man starter nede fra i de 5 lag og arbejder sig opad.
+Her bliver lagene fjerne som man kommer længere op, her bliver det pågældende lags header fjernet og "payloadet", altså det andet data sendt
+op til det næste lag.
+
+Det smarte ved det, er at hvert lag kan arbejde uafhængigt af de andre, så man har meget flexibilitet når man vil tilføje funktioner.
+
+
+
+
+Facit svar:
+Encapsulation is the process of passing a packet from a higher layer to a lower layer.
+In the simplest case, it simply appends additional information (i.e., a header) to the
+source packet. In more complicated scenarios, the original packet can be split into
+multiple packets, each carrying its own header. Decapsulation is the opposite process
+of encapsulation. It extracts the header from a source packet from a lower layer and
+passes the payload to the higher layer. If lower layer packets are part of a sequence,
+the corresponding payloads are put together before they are passed to the higher
+layer. Each protocol in a layer of a protocol stack relies on the services of the lower
+layers but not on their information. Thus, the information a protocol needs to process
+a packet should entirely be contained in the header of that protocol. Encapsulation
+and decapsulation are flexible mechanisms to allow each protocol to operate
+independently from others while being able to interface with each other. 

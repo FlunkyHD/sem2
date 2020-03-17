@@ -1,0 +1,12 @@
+Suppose Host A wants to send a large file to Host B. The path from Host A to Host
+B has three links, of rates R1 = 500 kbps, R2 = 2 Mbps, and R3 = 1 Mbps.
+a. Assuming no other traffic in the network, what is the throughput for the
+file transfer?
+b. Suppose the file is 4 million bytes. Dividing the file size by the throughput,
+roughly how long will it take to transfer the file to Host B?
+c. Repeat (a) and (b), but now with R2 reduced to 100 kbps.
+
+a) Det er den midste af R1, R2 og R3, hvilket er R1 (500 kbps)
+b) 32000000 bits / 500000 bps = 64 sek
+c) Nu er R2 bottlenecken og derfor den mindste værdi.
+32000000 bits / 100000 bps = 320 sek
