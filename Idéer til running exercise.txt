@@ -1,1 +1,1 @@
-Brug et class til at lave nye rækker i tabellen.
+Brug et class til at lave nye rækker i tabellen. ez fix
